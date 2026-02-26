@@ -33,25 +33,22 @@ export default function Skills() {
         <motion.div className="page" initial="hidden" animate="show" variants={fade}>
             <div className="section-header">
                 <h1 className="section-title">Skills & Tools</h1>
-                <p className="section-subtitle">
-                    Stuff I know, stuff I'm learning, and stuff I use day to day.
-                </p>
+                <p className="section-subtitle">Stuff I know, stuff I'm learning, and stuff I use day to day.</p>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
                 {/* Languages */}
                 <div className="glass-card">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
-                        <span style={{ fontSize: '1.3rem' }}>⚡</span>
-                        <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#a78bfa' }}>Languages & Frameworks</h3>
-                    </div>
+                    <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#a78bfa', marginBottom: '18px' }}>
+                        Languages & Frameworks
+                    </h3>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {langs.map(({ name, icon: Icon, color, note }) => (
                             <motion.div key={name} whileHover={{ x: 4 }}
                                 style={{
                                     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                                     padding: '9px 13px', background: 'rgba(255,255,255,0.03)',
-                                    border: '1px solid var(--border-subtle)', borderRadius: '8px', cursor: 'default'
+                                    border: '1px solid var(--border-subtle)', borderRadius: '8px', cursor: 'default',
                                 }}
                             >
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
@@ -64,13 +61,11 @@ export default function Skills() {
                     </div>
                 </div>
 
-                {/* Tools + Coursework + Soft skills */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <div className="glass-card">
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                            <span style={{ fontSize: '1.3rem' }}>🛠️</span>
-                            <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#ec4899' }}>Tools I Use</h3>
-                        </div>
+                        <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#ec4899', marginBottom: '16px' }}>
+                            Tools I Use
+                        </h3>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                             {tools.map(({ name, icon: Icon, color }) => (
                                 <motion.div key={name} whileHover={{ scale: 1.05 }}
@@ -78,7 +73,7 @@ export default function Skills() {
                                         display: 'flex', alignItems: 'center', gap: '6px',
                                         background: 'rgba(255,255,255,0.04)', border: '1px solid var(--border-subtle)',
                                         borderRadius: '8px', padding: '7px 12px', fontSize: '0.8rem',
-                                        color: 'var(--text-secondary)', cursor: 'default'
+                                        color: 'var(--text-secondary)', cursor: 'default',
                                     }}
                                     onMouseEnter={e => { e.currentTarget.style.borderColor = color; e.currentTarget.style.color = '#fff'; }}
                                     onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-subtle)'; e.currentTarget.style.color = 'var(--text-secondary)'; }}
@@ -90,12 +85,9 @@ export default function Skills() {
                     </div>
 
                     <div className="glass-card">
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
-                            <span style={{ fontSize: '1.3rem' }}>📚</span>
-                            <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#34d399', fontSize: '0.98rem' }}>
-                                Courses I've done
-                            </h3>
-                        </div>
+                        <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#34d399', marginBottom: '14px', fontSize: '0.98rem' }}>
+                            Courses I've done
+                        </h3>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                             {['DBMS', 'DSA', 'OOP', 'Linux', 'Computer Networks', 'OS'].map(item => (
                                 <span key={item} className="tag">{item}</span>

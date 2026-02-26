@@ -5,86 +5,32 @@ const fade = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { duratio
 
 const certifications = [
     {
-        category: 'Certifications', icon: '📜', color: '#34d399',
+        category: 'Certifications', color: '#34d399',
         items: [
-            {
-                title: 'DBMS – Coursera',
-                org: 'Coursera',
-                icon: FiServer, iconColor: '#0056d3',
-                desc: 'Completed a Coursera course on Database Management Systems. Covers SQL, normalization, transactions — all the stuff that actually makes sense once you use it in a project.',
-                badge: 'Completed',
-            },
-            {
-                title: 'Statistics – Coursera',
-                org: 'Coursera',
-                icon: FiServer, iconColor: '#0056d3',
-                desc: 'Stats course on Coursera. Useful for understanding data better — probability, distributions, that kind of thing.',
-                badge: 'Completed',
-            },
+            { title: 'DBMS – Coursera', org: 'Coursera', icon: FiServer, iconColor: '#0056d3', desc: 'Completed a Coursera course on Database Management Systems. Covers SQL, normalization, transactions — all the stuff that actually makes sense once you use it in a project.', badge: 'Completed' },
+            { title: 'Statistics – Coursera', org: 'Coursera', icon: FiServer, iconColor: '#0056d3', desc: 'Stats course on Coursera. Useful for understanding data better — probability, distributions, that kind of thing.', badge: 'Completed' },
         ],
     },
     {
-        category: 'Research', icon: '🔬', color: '#a78bfa',
+        category: 'Research', color: '#a78bfa',
         items: [
-            {
-                title: 'Research Paper – Microsoft CMT',
-                org: 'Microsoft CMT Conference',
-                icon: FiBookOpen, iconColor: '#00a4ef',
-                desc: 'Got a research paper accepted at a conference organized via Microsoft CMT. First time writing something academic like this — was a very different kind of challenge compared to coding.',
-                badge: 'Published',
-            },
+            { title: 'Research Paper – Microsoft CMT', org: 'Microsoft CMT Conference', icon: FiBookOpen, iconColor: '#00a4ef', desc: 'Got a research paper accepted at a conference organized via Microsoft CMT. First time writing something academic like this — was a very different kind of challenge compared to coding.', badge: 'Published' },
         ],
     },
     {
-        category: 'Work Experience', icon: '💼', color: '#fbbf24',
+        category: 'Work Experience', color: '#fbbf24',
         items: [
-            {
-                title: 'Frontend Intern – Unified',
-                org: 'Unified (1 month)',
-                icon: FiCode, iconColor: '#ec4899',
-                desc: 'Did a 1-month frontend internship at Unified. Built UI components, worked in an actual dev environment, and got a feel for how real teams work. Definitely learned more in that month than a whole semester.',
-                badge: 'Internship',
-            },
+            { title: 'Frontend Intern – Unified', org: 'Unified (1 month)', icon: FiCode, iconColor: '#ec4899', desc: 'Did a 1-month frontend internship at Unified. Built UI components, worked in an actual dev environment, and got a feel for how real teams work. Definitely learned more in that month than a whole semester.', badge: 'Internship' },
         ],
     },
     {
-        category: 'Competitive & Hackathons', icon: '🏆', color: '#f97316',
+        category: 'Competitive & Hackathons', color: '#f97316',
         items: [
-            {
-                title: 'HackerRank – 3 Star in C, C++ & Python',
-                org: 'HackerRank',
-                icon: FiActivity, iconColor: '#2ec866',
-                desc: 'Got 3-star ratings in C, C++, and Python on HackerRank — mostly by grinding problems during my first year. Good for keeping the basics sharp.',
-                badge: '3 Stars',
-            },
-            {
-                title: 'HackMatrix – 7th Place',
-                org: 'IIT Patna (Unstop)',
-                icon: FiZap, iconColor: '#fbbf24',
-                desc: 'Competed in HackMatrix by IIT Patna on Unstop and secured 7th rank. Was pretty intense — we had to build something complete in a short time. Really enjoyed it.',
-                badge: '7th / All India',
-            },
-            {
-                title: 'CADMANIA – 4th Place',
-                org: 'AutoCAD Competition',
-                icon: FiAward, iconColor: '#f97316',
-                desc: 'Participated in CADMANIA AutoCAD design competition and finished 4th. AutoCAD is one of those skills I picked up in between — didn\'t expect to do this well.',
-                badge: '4th Place',
-            },
-            {
-                title: 'Zinnovata 2.0',
-                org: 'Chandigarh University',
-                icon: FiStar, iconColor: '#60a5fa',
-                desc: 'Participated in Zinnovata 2.0, supposedly the biggest hackathon at CU. Good experience working under pressure with a team.',
-                badge: 'Participated',
-            },
-            {
-                title: 'CodeRelay – LeetCode',
-                org: 'LeetCode Event',
-                icon: FiTerminal, iconColor: '#ffa116',
-                desc: 'Took part in CodeRelay, a team-based LeetCode competition. Not my strongest area but I enjoy competitive programming challenges.',
-                badge: 'Participated',
-            },
+            { title: 'HackerRank – 3 Star in C, C++ & Python', org: 'HackerRank', icon: FiActivity, iconColor: '#2ec866', desc: 'Got 3-star ratings in C, C++, and Python on HackerRank — mostly by grinding problems in my first year. Good for keeping the basics sharp.', badge: '3 Stars' },
+            { title: 'HackMatrix – 7th Place', org: 'IIT Patna (Unstop)', icon: FiZap, iconColor: '#fbbf24', desc: 'Competed in HackMatrix by IIT Patna on Unstop and secured 7th rank. We had to build something complete in a short time. Really enjoyed it.', badge: '7th / All India' },
+            { title: 'CADMANIA – 4th Place', org: 'AutoCAD Competition', icon: FiAward, iconColor: '#f97316', desc: "Participated in CADMANIA AutoCAD design competition and finished 4th. AutoCAD is one of those skills I picked up on the side — didn't expect to do this well.", badge: '4th Place' },
+            { title: 'Zinnovata 2.0', org: 'Chandigarh University', icon: FiStar, iconColor: '#60a5fa', desc: 'Participated in Zinnovata 2.0, supposedly the biggest hackathon at CU. Good experience working under pressure with a team.', badge: 'Participated' },
+            { title: 'CodeRelay – LeetCode', org: 'LeetCode Event', icon: FiTerminal, iconColor: '#ffa116', desc: 'Took part in CodeRelay, a team-based LeetCode competition. Not my strongest area but I enjoy competitive programming challenges.', badge: 'Participated' },
         ],
     },
 ];
@@ -103,7 +49,6 @@ export default function Certificates() {
                 {certifications.map((cat) => (
                     <div key={cat.category}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px' }}>
-                            <span style={{ fontSize: '1.2rem' }}>{cat.icon}</span>
                             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1rem', color: cat.color }}>
                                 {cat.category}
                             </h2>

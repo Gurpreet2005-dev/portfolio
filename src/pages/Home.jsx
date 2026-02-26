@@ -19,15 +19,13 @@ export default function Home() {
         >
             {/* Hero */}
             <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 70px' }}>
-                {/* Avatar */}
                 <div style={{
                     width: 96, height: 96, borderRadius: '50%',
                     background: 'var(--gradient)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     margin: '0 auto 28px',
                     fontSize: '2.2rem', fontFamily: 'Outfit, sans-serif', fontWeight: 800,
-                    color: '#fff',
-                    boxShadow: '0 0 40px rgba(124,58,237,0.45)',
+                    color: '#fff', boxShadow: '0 0 40px rgba(124,58,237,0.45)',
                 }}>
                     GS
                 </div>
@@ -38,12 +36,12 @@ export default function Home() {
                     fontWeight: 900, lineHeight: 1.1,
                     margin: '0 0 16px', letterSpacing: '-1.5px',
                 }}>
-                    Hey, I'm <span className="gradient-text">Gurpreet Singh</span> 👋
+                    Hey, I'm <span className="gradient-text">Gurpreet Singh</span>
                 </h1>
 
                 <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', marginBottom: '16px', lineHeight: 1.7 }}>
-                    2nd year CS student at Chandigarh University who really enjoys building things for the web.
-                    I mostly work with React on the frontend, and I've been slowly picking up backend stuff too
+                    3rd year CS student at Chandigarh University who really enjoys building things for the web.
+                    I mostly work with React on the frontend, and I've been picking up backend stuff too
                     (Node, Express, MongoDB).
                 </p>
 
@@ -52,13 +50,11 @@ export default function Home() {
                     Still learning a lot — but that's kind of the point, right?
                 </p>
 
-                {/* CTA Buttons */}
                 <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '44px' }}>
                     <Link to="/projects" className="btn-primary">See my work <FiArrowRight /></Link>
                     <Link to="/contact" className="btn-outline">Get in touch <FiMail size={15} /></Link>
                 </div>
 
-                {/* Social/contact links */}
                 <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
                     {socials.map(({ icon: Icon, label, href, color }) => (
                         <motion.a
@@ -87,10 +83,10 @@ export default function Home() {
                 gap: '14px', maxWidth: '760px', margin: '0 auto 72px',
             }}>
                 {[
-                    { value: '8.25', label: 'CGPA (so far 😅)' },
-                    { value: '3', label: 'projects shipped' },
-                    { value: '2nd yr', label: 'out of 4 at CU' },
-                    { value: '2027', label: 'graduating (hopefully)' },
+                    { value: '8.25', label: 'CGPA (so far)' },
+                    { value: '3+', label: 'projects shipped' },
+                    { value: '3rd yr', label: 'out of 4 at CU' },
+                    { value: '2027', label: 'graduating' },
                 ].map(({ value, label }) => (
                     <div key={label} className="glass-card" style={{ textAlign: 'center', padding: '22px 14px' }}>
                         <div style={{
@@ -112,7 +108,7 @@ export default function Home() {
                 }}>
                     <div>
                         <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, marginBottom: '10px', color: '#c4b5fd', fontSize: '0.95rem' }}>
-                            📍 Where I study
+                            Where I study
                         </h3>
                         <p style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: '3px', fontSize: '0.92rem' }}>
                             B.E. in Computer Science
@@ -122,7 +118,7 @@ export default function Home() {
                     </div>
                     <div>
                         <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, marginBottom: '10px', color: '#c4b5fd', fontSize: '0.95rem' }}>
-                            🔨 What I'm up to
+                            What I'm up to
                         </h3>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.8 }}>
                             Building React projects, learning backend dev, and looking for an internship where I can
@@ -131,10 +127,10 @@ export default function Home() {
                     </div>
                     <div>
                         <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, marginBottom: '10px', color: '#c4b5fd', fontSize: '0.95rem' }}>
-                            📬 Hit me up
+                            Contact
                         </h3>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.8 }}>
-                            Chandigarh, India 🇮🇳<br />
+                            Chandigarh, India<br />
                             +91 8005884102<br />
                             <span style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>usually replies fast</span>
                         </p>

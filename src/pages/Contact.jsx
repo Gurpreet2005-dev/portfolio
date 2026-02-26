@@ -9,7 +9,7 @@ const contactInfo = [
     { icon: FiPhone, label: 'Phone / WhatsApp', value: '+91 8005884102', href: 'tel:+918005884102', color: '#25d366' },
     { icon: FiLinkedin, label: 'LinkedIn', value: 'gurpreet-singh-a967a3261', href: 'https://www.linkedin.com/in/gurpreet-singh-a967a3261/', color: '#0a66c2' },
     { icon: FiGithub, label: 'GitHub', value: 'Gurpreet2005-dev', href: 'https://github.com/Gurpreet2005-dev', color: '#ffffff' },
-    { icon: FiMapPin, label: 'Location', value: 'Chandigarh, India 🇮🇳', href: null, color: '#a78bfa' },
+    { icon: FiMapPin, label: 'Location', value: 'Chandigarh, India', href: null, color: '#a78bfa' },
 ];
 
 export default function Contact() {
@@ -45,9 +45,9 @@ export default function Contact() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                     <div className="glass-card">
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: 1.85 }}>
-                            I'm <strong style={{ color: '#fff' }}>Gurpreet</strong>, a 2nd year CS student at Chandigarh University.
+                            I'm <strong style={{ color: '#fff' }}>Gurpreet</strong>, a 3rd year CS student at Chandigarh University.
                             I'm looking for <strong style={{ color: '#c4b5fd' }}>internship opportunities</strong> where I can learn,
-                            contribute, and grow. I reply quickly — promise 🙂
+                            contribute, and grow. I reply quickly — promise.
                         </p>
                     </div>
 
